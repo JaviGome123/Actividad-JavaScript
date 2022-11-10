@@ -1,7 +1,7 @@
 <!-- Escribe aquí tu nombre-->
 <html lang="es">
     <head>
-        <title>Ejercicio 4. Calcular nota</title>
+        <title>Ejercicio 3. Calcular nota</title>
     </head>
     <body>
         <h1>Cálculo de notas</h1>
@@ -23,6 +23,21 @@
             var calificacion="";
             var n=Number.parseInt(nota);
 
+                if(n >= 0 && n <3)
+                    calificacion="Muy deficiente";
+                else if(n >= 3 && n < 5)
+                    calificacion="Insuficiente";
+                else if(n >= 5 && n < 6)
+                    calificacion="Suficiente";
+                else if(n >= 6 && n < 7)
+                    calificacion="Bien";
+                else if(n >= 7 && n < 9)
+                    calificacion="Notable";  
+                else if(n >= 9 && n <=10)
+                   calificacion="Sobresaliente";
+                else
+                    calificacion="Incorrecta";
+                
             // Estructura de control *** if - else ***
 
             /*

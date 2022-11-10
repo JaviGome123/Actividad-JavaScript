@@ -1,31 +1,40 @@
 /**
- * @author: Escriba su nombre y apellidos aquí.
- */
-
-/**
+ * @author: Javier Gomez
  * Comprueba la mayoría de edad
- * @param {int} edad 
+ * @param {*} edad 
  * @returns true | false;
  */
 
 function esMayorEdad(edad)
 {
-    return 0; // Debe escribir el código correcto AQUÍ.
+    
+        return (edad>=18);
+    
+    // Completa el código de la función
 }
 /**
  * Obtiene la calificación equivalente a la nota numérica
- * @param {int} nota: entero. 
+ * @param {*} nota: integer. 
  * @returns  cadena: Calificación
  */
 function obtenerCalificacion(nota)
 {
-    var calificacion="Incorrecta";
+                 if(nota >= 0 && nota <3)
+                   var calificacion="Muy deficiente";
+                else if(nota >= 3 && nota < 5)
+                    calificacion="Insuficiente";
+                else if(nota >= 5 && nota < 6)
+                    calificacion="Suficiente";
+                else if(nota >= 6 && nota < 7)
+                    calificacion="Bien";
+                else if(nota >= 7 && nota < 9)
+                    calificacion="Notable";  
+                else if(nota >= 9 && nota <=10)
+                   calificacion="Sobresaliente";
+                else
+                    calificacion="Incorrecta";
 
-            // Estructura de control *** switch(nota) ***
-            
-            // Complete el codigo AQUÍ
-
-            return calificacion;
+                    return calificacion;
 }
 /**
  * Comprueba la mayoria de edad en la página HTML.
@@ -54,8 +63,3 @@ function averiguarCalificacion()
         
     document.getElementById("txtCalificacion").innerHTML="Calificación: "+obtenerCalificacion(nota);
 }
-
-module.exports={
-    esMayorEdad,
-    obtenerCalificacion,
-};
