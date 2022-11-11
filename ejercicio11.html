@@ -1,4 +1,4 @@
-<!-- Escribe tu nombre AQUÍ-->
+<!-- Javier Gomez -->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -9,6 +9,20 @@
         <p>Modifique este HTML</p>
         <script>
             const numeros=[0,1,2,3,4,5,6,7,8,9,10];
+            let txt = "";
+
+            for(let x in numeros){
+                document.writeln("Tabla de multiplicar del "+numeros[x]+"<br/>");
+                console.log("Tabla de multiplicar del "+numeros[x]);
+                document.writeln("-----------------------------------------<br/>");
+                console.log("---------------------------------------------------");
+
+                    for(let y in numeros){
+                        document.writeln(numeros[x]+" x "+numeros[y]+" = "+(numeros[x]*numeros[y])+"<br/>");
+                        console.log(numeros[x]+" x "+numeros[y]+" = "+(numeros[x]*numeros[y]));
+                    }
+                    document.writeln("<br/>");
+            }
             /* ESCRIBE TU CODIGO AQUI
             para X en numeros hacer
                 document.writeln("Tabla de multiplicar del "+numeros[x]+"<br/>");

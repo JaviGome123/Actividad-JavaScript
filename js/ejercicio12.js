@@ -5,14 +5,14 @@
 
 /**
  * Implementa el Menú 1: Sumar
- * @author: Coloca tu nombre aquí.
+ * @author: Javier Gómez.
  * @return suma
  */
 function menu1()
 {
     // Implemente la opción de la calculadora que permite sumar.
     console.info("Suma:");
-    let sumando1=parseInt(prompt("Introduzca el prmier sumando: ",0));
+    let sumando1=parseInt(prompt("Introduzca el primer sumando: ",0));
     let sumando2=parseInt(prompt("Introduzca el segundo sumando: ",0));
     let resultado=sumando1+sumando2;
     console.log("El resultado de la suma "+sumando1+" + "+sumando2+" es "+resultado);
@@ -21,25 +21,24 @@ function menu1()
 
 /**
  * Implementa el Menú 2: Restar
- * @author: Coloca tu nombre aquí.
+ * @author: Javier Gómez.
  * @return resta
  */
 function menu2()
 {
     // Implemente la opción de la calculadora que permite restar.
     console.info("Resta:");
-    
     // IMPLEMENTA TU CÓDIGO AQUÍ
-    let minuendo=0;
-    let sustraendo=0;
-    let resultado=-1;
+    let minuendo=parseInt(prompt("Introduzca el minuendo: ",0));
+    let sustraendo=parseInt(prompt("Introduzca el sustraendo: ",0));
+    let resultado2=minuendo-sustraendo;
 
-    console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado);
-    return resultado;
+    console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado2);
+    return resultado2;
 }
 /**
  * Implementa el Menú 3: Multiplicar
- * @author: Coloca tu nombre aquí.
+ * @author: Javier Gómez.
  * @return multiplicación
  */
 function menu3()
@@ -48,13 +47,18 @@ function menu3()
     console.info("Multiplica:");
     
     // IMPLEMENTA TU CODIGO AQUÍ 
+    let multiplicando=parseInt(prompt("Introduzca el primer número a multiplicar: ",0));
+    let multiplicador=parseInt(prompt("Introduzca el segundo número a multiplicar: ",0));
+    let resultado3=multiplicando*multiplicador;
 
-    return 3;
+    console.log("El resultado de la multiplicación de "+multiplicando+" * "+multiplicador+" es "+resultado3);
+
+    return resultado3;
 }
 
 /**
  * Implementa el Menú 4: Dividir
- * @author: Coloca tu nombre aquí.
+ * @author: Javier Gómez.
  * @return división
  */
 function menu4()
@@ -62,9 +66,21 @@ function menu4()
     // Implemente la opción de la calculadora que permite dividir.
     console.info("Divide:");
     
+    let dividendo=parseInt(prompt("Introduzca el número a dividir: ",0));
+    let divisor=parseInt(prompt("Introduzca el número por el que quieres dividir: ",0));
+    let resultado4=dividendo/divisor;
+
+    if(resultado4 >= 0){
+
+    console.log("El resultado de la  división de "+dividendo+" / "+divisor+" es "+resultado4);
+
     // IMPLEMENTA TU CÓDIGO AQUÍ
 
-    return 4;
+    return resultado4;
+    }
+    else
+
+    console.log("Error");
 
 }
 
