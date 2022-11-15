@@ -1,4 +1,4 @@
-/**
+/**  Javier gomez
  * Calcula la media de los valores
  * @param {Array} v 
  * @returns media
@@ -6,8 +6,18 @@
  */
 function calcularMedia(v)
 {
+    let suma=0;
+    var media=0;
+
+    for(let i=0;i<v.length;i++){
+
+        suma=suma+v[i];
+    }
+
+    media=suma/v.length;
+
     // IMPLEMENTA TU CODIGO AQUÍ
-    return -1;
+    return media;
 }
 /**
  * Obtiene la nota mínima
@@ -16,8 +26,14 @@ function calcularMedia(v)
  */
 function calcularMinimo(v)
 {
-    let minima=Number.MIN_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
-    
+    let minima=v[0];
+
+    for(let i=0;i<v.length;i++){
+        if(v[i] < minima){
+            minima = v[i];
+        }
+    }
+
     return minima;
 }
 /**
@@ -27,7 +43,13 @@ function calcularMinimo(v)
  */
 function calcularMaximo(v)
 {
-    let maxima=Number.MAX_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
+    let maxima=v[0];
+
+    for(let i=0;i<v.length;i++){
+        if(v[i] > maxima){
+            maxima= v[i];
+        }
+    }
 
     return maxima;
 }
@@ -41,7 +63,11 @@ function contarAprobados(v)
     let aprobados=0;
 
     // COMPLETA TU CODIGO
-
+    for(let i=0;i<v.length;i++){
+        if(v[i] >= 5){
+            aprobados=aprobados+1;
+        }
+    }
     return aprobados;
 }
 /**
@@ -54,6 +80,11 @@ function contarSuspensos(v)
     let suspensos=0;
     
     // COMPLETA TU CODIGO
+    for(let i=0;i<v.length;i++){
+        if(v[i] < 5){
+            suspensos=suspensos+1;
+        }
+    }
 
     return suspensos;
 }
