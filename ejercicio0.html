@@ -1,4 +1,4 @@
-<!-- Escriba su nombre aquí -->
+<!-- Javier Gómez -->
 <html lang="es">
     <head>
         <title>Ejercicio 0. Consolas y Salidas en Java Script</title>
@@ -16,25 +16,26 @@
         <p id="demo">Escribiremos en este elemento HTML</p>
         <script>
             // Alerta
-            
+            alert("Hola mundo!");
             /* 
                 Escribir en un elemento HTML, usando innerHTML.
                 Escribimos en este elemento HTML: ¡Hola mundo!
             */
+            document.getElementById('demo').innerHTML='¡Hola Mundo!';
            
-           
-            // Consolas log
-           
-            // Mensaje de información
-            
-            // Mensaje de error
-            
-            // Mensaje de advertencia
-            
-            // Debugger
-            // Descomenta --> 
-            /* Descomenta --> /* debugger
-            console.log('Despues de la depuración'); */ // <--- Descomenta para comprobar el efecto.
+           // Consolas log
+           console.log('Mensaje Log')
+           // Mensaje de información
+           console.log('Mensaje Info')
+           // Mensaje de error
+           console.log('Mensaje Error')
+           // Mensaje de advertencia
+           console.log('Mensaje Advertencia')
+           // Debugger
+           debugger
+           console.log('Después de la depuración')
+           // Descomenta --> 
+         
         </script>
     </body>
 </html>
